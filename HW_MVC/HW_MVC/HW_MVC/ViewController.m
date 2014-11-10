@@ -28,13 +28,7 @@
     
   //  self.but1.backgroundColor = [UIColor redColor];
     
-<<<<<<< Updated upstream
-    NSNumber *numb = [[NSUserDefaults standardUserDefaults] objectForKey:@""];
-    float size = numb? numb.floatValue : 15;
-    self.but1.titleLabel.font = [UIFont systemFontOfSize:size];
-=======
-    
->>>>>>> Stashed changes
+
     
     NSData *color = [[NSUserDefaults standardUserDefaults] objectForKey:@"color"];
     if (color)
