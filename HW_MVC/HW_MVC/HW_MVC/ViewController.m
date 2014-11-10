@@ -28,23 +28,31 @@
     
   //  self.but1.backgroundColor = [UIColor redColor];
     
+<<<<<<< Updated upstream
     NSNumber *numb = [[NSUserDefaults standardUserDefaults] objectForKey:@""];
     float size = numb? numb.floatValue : 15;
     self.but1.titleLabel.font = [UIFont systemFontOfSize:size];
+=======
+    
+>>>>>>> Stashed changes
     
     NSData *color = [[NSUserDefaults standardUserDefaults] objectForKey:@"color"];
     if (color)
         self.but1.backgroundColor = [NSKeyedUnarchiver unarchiveObjectWithData:color];
+    else
+    {
+        self.but1.backgroundColor = [UIColor whiteColor];
+    }
     
     NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"text"];
     if (str)
         self.textField.text = str;
     else{
-        self.textField.text = @"attata";
+        self.textField.text = @"";
     }
     
     NSNumber *location = [[NSUserDefaults standardUserDefaults] objectForKey:@"slider"];
-    location = location ? location : @50;
+    location = location ? location : @0;
     self.slider.value = location.floatValue;
     
     NSNumber *i = [[NSUserDefaults standardUserDefaults]objectForKey:@"segment"];
