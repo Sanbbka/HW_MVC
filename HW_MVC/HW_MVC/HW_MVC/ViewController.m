@@ -76,21 +76,25 @@
 - (IBAction)slider:(id)sender {
     float ttt = self.slider.value;
     [[NSUserDefaults standardUserDefaults] setObject:@(ttt) forKey:@"slider"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)segment:(id)sender {
     int i = self.segControl.selectedSegmentIndex;
     [[NSUserDefaults standardUserDefaults] setObject:@(i) forKey:@"segment"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)switch:(id)sender {
     int c = self.vkl.isOn;
     [[NSUserDefaults standardUserDefaults] setObject:@(c) forKey:@"switch"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (IBAction)TextField:(UITextField *)sender {
     NSString *s = self.textField.text;
     [[NSUserDefaults standardUserDefaults] setObject:s forKey:@"text"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 
