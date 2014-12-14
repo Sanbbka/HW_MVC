@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Md-Dl-P0i">
-                                <rect key="frame" x="388" y="93" width="51" height="31"/>
-                                <connections>
-                                    <action selector="booleanF:" destination="BYZ-38-t0r" eventType="valueChanged" id="S3x-if-HKu"/>
-                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="q39-7q-SEw"/>
-                                </connections>
-                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orr-TM-FlF">
                                 <rect key="frame" x="109" y="342" width="322" height="40"/>
                                 <color key="backgroundColor" red="0.16791121758552952" green="0.1871689198296182" blue="0.94558848505434778" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,8 +51,15 @@
                                     <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="qlo-mm-NBG"/>
                                 </connections>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Md-Dl-P0i">
+                                <rect key="frame" x="415" y="93" width="51" height="31"/>
+                                <connections>
+                                    <action selector="booleanF:" destination="BYZ-38-t0r" eventType="valueChanged" id="S3x-if-HKu"/>
+                                    <action selector="switch:" destination="BYZ-38-t0r" eventType="valueChanged" id="q39-7q-SEw"/>
+                                </connections>
+                            </switch>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7rz-1r-ADZ">
-                                <rect key="frame" x="139" y="294" width="263" height="30"/>
+                                <rect key="frame" x="139" y="304" width="263" height="30"/>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
@@ -69,6 +70,9 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Md-Dl-P0i" secondAttribute="trailing" constant="139" id="Khk-rW-LPh"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TextField" destination="7rz-1r-ADZ" id="Im6-nq-SZJ"/>

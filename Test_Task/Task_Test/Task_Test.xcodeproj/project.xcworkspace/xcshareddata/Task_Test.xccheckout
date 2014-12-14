@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DA7778E9-E0B4-441D-BD5F-AA3142C9C911</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Task_Test</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9880326883C7B8599AB8BA56C61FCBD25C0CACEF</key>
+		<string>https://github.com/Sanbbka/HW_MVC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Test_Task/Task_Test/Task_Test.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9880326883C7B8599AB8BA56C61FCBD25C0CACEF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Sanbbka/HW_MVC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9880326883C7B8599AB8BA56C61FCBD25C0CACEF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9880326883C7B8599AB8BA56C61FCBD25C0CACEF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HW_MVC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

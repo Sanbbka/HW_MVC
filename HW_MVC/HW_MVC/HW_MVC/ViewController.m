@@ -26,8 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-  //  self.but1.backgroundColor = [UIColor redColor];
-    
+
 
     
     NSData *color = [[NSUserDefaults standardUserDefaults] objectForKey:@"color"];
